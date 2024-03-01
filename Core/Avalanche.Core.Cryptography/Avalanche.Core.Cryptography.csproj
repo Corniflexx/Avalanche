@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BouncyCastle.NetCore" Version="2.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Avalanche.Core.Services\Avalanche.Core.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Avalanche.Core.Services" />
+    <Using Include="Org.BouncyCastle.Crypto.Digests" />
+    <Using Include="Org.BouncyCastle.Math" />
+    <Using Include="Org.BouncyCastle.Utilities.Encoders" />
+  </ItemGroup>
+
+</Project>

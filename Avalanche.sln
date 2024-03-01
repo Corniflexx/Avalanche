@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34526.213
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{97AC3423-4A67-4698-98A7-C0FAE83C4E35}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{0B4ED108-7590-43F1-A6AB-42DD71127918}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalanche.Core.Cryptography", "Core\Avalanche.Core.Cryptography\Avalanche.Core.Cryptography.csproj", "{A2993A4B-0042-45AC-986D-123339F84E7C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalanche.Core.Networking", "Core\Avalanche.Core.Networking\Avalanche.Core.Networking.csproj", "{6917180D-B655-430C-86FF-68BB8A10A8E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalanche.Core.Services", "Core\Avalanche.Core.Services\Avalanche.Core.Services.csproj", "{37D65265-7FF0-4976-95BE-0836F8C34308}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalanche.Core.Configuration", "Core\Avalanche.Core.Configuration\Avalanche.Core.Configuration.csproj", "{28E3D529-BA50-4A2F-B384-AB6C6D535AA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalanche.Core.Extensions", "Core\Avalanche.Core.Extensions\Avalanche.Core.Extensions.csproj", "{98C33008-05A2-4AF1-9B37-A4F2EB374F33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalanche.Core.Logging", "Core\Avalanche.Core.Logging\Avalanche.Core.Logging.csproj", "{FA3DC0EB-31FD-4F0C-B31C-C470B3ABAC8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.Core.Collections", "Core\Avalanche.Core.Collections\Avalanche.Core.Collections.csproj", "{6DE818D6-B8A5-4236-BC49-2B6A7AC0BAE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.Database.Entities", "Database\Avalanche.Database.Entities\Avalanche.Database.Entities.csproj", "{07D760FA-8CBE-4BD8-B4FC-0AB617A991F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.Database.User", "Database\Avalanche.Database.User\Avalanche.Database.User.csproj", "{A1E66443-5C13-4753-A255-9944914DBBCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.Database.World", "Database\Avalanche.Database.World\Avalanche.Database.World.csproj", "{5788FE4B-F5C5-461C-9B10-A9445C34D351}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2993A4B-0042-45AC-986D-123339F84E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2993A4B-0042-45AC-986D-123339F84E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2993A4B-0042-45AC-986D-123339F84E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2993A4B-0042-45AC-986D-123339F84E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6917180D-B655-430C-86FF-68BB8A10A8E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6917180D-B655-430C-86FF-68BB8A10A8E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6917180D-B655-430C-86FF-68BB8A10A8E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6917180D-B655-430C-86FF-68BB8A10A8E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37D65265-7FF0-4976-95BE-0836F8C34308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37D65265-7FF0-4976-95BE-0836F8C34308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37D65265-7FF0-4976-95BE-0836F8C34308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37D65265-7FF0-4976-95BE-0836F8C34308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28E3D529-BA50-4A2F-B384-AB6C6D535AA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28E3D529-BA50-4A2F-B384-AB6C6D535AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28E3D529-BA50-4A2F-B384-AB6C6D535AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28E3D529-BA50-4A2F-B384-AB6C6D535AA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98C33008-05A2-4AF1-9B37-A4F2EB374F33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C33008-05A2-4AF1-9B37-A4F2EB374F33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C33008-05A2-4AF1-9B37-A4F2EB374F33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C33008-05A2-4AF1-9B37-A4F2EB374F33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA3DC0EB-31FD-4F0C-B31C-C470B3ABAC8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA3DC0EB-31FD-4F0C-B31C-C470B3ABAC8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA3DC0EB-31FD-4F0C-B31C-C470B3ABAC8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA3DC0EB-31FD-4F0C-B31C-C470B3ABAC8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DE818D6-B8A5-4236-BC49-2B6A7AC0BAE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DE818D6-B8A5-4236-BC49-2B6A7AC0BAE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DE818D6-B8A5-4236-BC49-2B6A7AC0BAE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DE818D6-B8A5-4236-BC49-2B6A7AC0BAE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07D760FA-8CBE-4BD8-B4FC-0AB617A991F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07D760FA-8CBE-4BD8-B4FC-0AB617A991F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07D760FA-8CBE-4BD8-B4FC-0AB617A991F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07D760FA-8CBE-4BD8-B4FC-0AB617A991F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1E66443-5C13-4753-A255-9944914DBBCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E66443-5C13-4753-A255-9944914DBBCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E66443-5C13-4753-A255-9944914DBBCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E66443-5C13-4753-A255-9944914DBBCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5788FE4B-F5C5-461C-9B10-A9445C34D351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5788FE4B-F5C5-461C-9B10-A9445C34D351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5788FE4B-F5C5-461C-9B10-A9445C34D351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5788FE4B-F5C5-461C-9B10-A9445C34D351}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A2993A4B-0042-45AC-986D-123339F84E7C} = {97AC3423-4A67-4698-98A7-C0FAE83C4E35}
+		{6917180D-B655-430C-86FF-68BB8A10A8E2} = {97AC3423-4A67-4698-98A7-C0FAE83C4E35}
+		{37D65265-7FF0-4976-95BE-0836F8C34308} = {97AC3423-4A67-4698-98A7-C0FAE83C4E35}
+		{28E3D529-BA50-4A2F-B384-AB6C6D535AA3} = {97AC3423-4A67-4698-98A7-C0FAE83C4E35}
+		{98C33008-05A2-4AF1-9B37-A4F2EB374F33} = {97AC3423-4A67-4698-98A7-C0FAE83C4E35}
+		{FA3DC0EB-31FD-4F0C-B31C-C470B3ABAC8E} = {97AC3423-4A67-4698-98A7-C0FAE83C4E35}
+		{6DE818D6-B8A5-4236-BC49-2B6A7AC0BAE9} = {97AC3423-4A67-4698-98A7-C0FAE83C4E35}
+		{07D760FA-8CBE-4BD8-B4FC-0AB617A991F8} = {0B4ED108-7590-43F1-A6AB-42DD71127918}
+		{A1E66443-5C13-4753-A255-9944914DBBCE} = {0B4ED108-7590-43F1-A6AB-42DD71127918}
+		{5788FE4B-F5C5-461C-9B10-A9445C34D351} = {0B4ED108-7590-43F1-A6AB-42DD71127918}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CA19EC72-233F-43D2-84F4-708A7C1DA57C}
+	EndGlobalSection
+EndGlobal
