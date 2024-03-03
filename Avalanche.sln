@@ -19,13 +19,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalanche.Core.Extensions",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalanche.Core.Logging", "Core\Avalanche.Core.Logging\Avalanche.Core.Logging.csproj", "{FA3DC0EB-31FD-4F0C-B31C-C470B3ABAC8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.Core.Collections", "Core\Avalanche.Core.Collections\Avalanche.Core.Collections.csproj", "{6DE818D6-B8A5-4236-BC49-2B6A7AC0BAE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalanche.Core.Collections", "Core\Avalanche.Core.Collections\Avalanche.Core.Collections.csproj", "{6DE818D6-B8A5-4236-BC49-2B6A7AC0BAE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.Database.Entities", "Database\Avalanche.Database.Entities\Avalanche.Database.Entities.csproj", "{07D760FA-8CBE-4BD8-B4FC-0AB617A991F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalanche.Database.Entities", "Database\Avalanche.Database.Entities\Avalanche.Database.Entities.csproj", "{07D760FA-8CBE-4BD8-B4FC-0AB617A991F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.Database.User", "Database\Avalanche.Database.User\Avalanche.Database.User.csproj", "{A1E66443-5C13-4753-A255-9944914DBBCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalanche.Database.User", "Database\Avalanche.Database.User\Avalanche.Database.User.csproj", "{A1E66443-5C13-4753-A255-9944914DBBCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.Database.World", "Database\Avalanche.Database.World\Avalanche.Database.World.csproj", "{5788FE4B-F5C5-461C-9B10-A9445C34D351}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalanche.Database.World", "Database\Avalanche.Database.World\Avalanche.Database.World.csproj", "{5788FE4B-F5C5-461C-9B10-A9445C34D351}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gane", "Gane", "{56248352-5493-4BC7-881D-5DFF95AB2A15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{F6DD0BB3-63E8-42CF-A3F1-3CD2E42EA25C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{A986833B-02AC-4956-8C99-FF745FE40B88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.Server.Logon", "Server\Avalanche.Server.Logon\Avalanche.Server.Logon.csproj", "{DF97B6F7-81A1-4490-BD47-51574A33E699}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.Server.Realm", "Server\Avalanche.Server.Realm\Avalanche.Server.Realm.csproj", "{752148B1-6726-4910-8E85-FBC784EC40AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +83,14 @@ Global
 		{5788FE4B-F5C5-461C-9B10-A9445C34D351}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5788FE4B-F5C5-461C-9B10-A9445C34D351}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5788FE4B-F5C5-461C-9B10-A9445C34D351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF97B6F7-81A1-4490-BD47-51574A33E699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF97B6F7-81A1-4490-BD47-51574A33E699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF97B6F7-81A1-4490-BD47-51574A33E699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF97B6F7-81A1-4490-BD47-51574A33E699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{752148B1-6726-4910-8E85-FBC784EC40AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{752148B1-6726-4910-8E85-FBC784EC40AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{752148B1-6726-4910-8E85-FBC784EC40AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{752148B1-6726-4910-8E85-FBC784EC40AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +106,8 @@ Global
 		{07D760FA-8CBE-4BD8-B4FC-0AB617A991F8} = {0B4ED108-7590-43F1-A6AB-42DD71127918}
 		{A1E66443-5C13-4753-A255-9944914DBBCE} = {0B4ED108-7590-43F1-A6AB-42DD71127918}
 		{5788FE4B-F5C5-461C-9B10-A9445C34D351} = {0B4ED108-7590-43F1-A6AB-42DD71127918}
+		{DF97B6F7-81A1-4490-BD47-51574A33E699} = {F6DD0BB3-63E8-42CF-A3F1-3CD2E42EA25C}
+		{752148B1-6726-4910-8E85-FBC784EC40AF} = {F6DD0BB3-63E8-42CF-A3F1-3CD2E42EA25C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CA19EC72-233F-43D2-84F4-708A7C1DA57C}
