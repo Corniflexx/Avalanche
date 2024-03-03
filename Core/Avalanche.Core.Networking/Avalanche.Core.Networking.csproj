@@ -1,33 +1,33 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="fasterflect" Version="3.0.0" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="fasterflect" Version="3.0.0"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Avalanche.Core.Collections\Avalanche.Core.Collections.csproj" />
-    <ProjectReference Include="..\Avalanche.Core.Cryptography\Avalanche.Core.Cryptography.csproj" />
-    <ProjectReference Include="..\Avalanche.Core.Extensions\Avalanche.Core.Extensions.csproj" />
-    <ProjectReference Include="..\Avalanche.Core.Logging\Avalanche.Core.Logging.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Avalanche.Core.Collections\Avalanche.Core.Collections.csproj"/>
+        <ProjectReference Include="..\Avalanche.Core.Cryptography\Avalanche.Core.Cryptography.csproj"/>
+        <ProjectReference Include="..\Avalanche.Core.Extensions\Avalanche.Core.Extensions.csproj"/>
+        <ProjectReference Include="..\Avalanche.Core.Logging\Avalanche.Core.Logging.csproj"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <Using Include="Avalanche.Core.Collections" />
-    <Using Include="Avalanche.Core.Cryptography" />
-    <Using Include="Avalanche.Core.Extensions" />
-    <Using Include="Avalanche.Core.Logging" />
-    <Using Include="Avalanche.Core.Networking.Security" />
-    <Using Include="Avalanche.Core.Networking.Transmission" />
-    <Using Include="Fasterflect" />
-    <Using Include="System.Collections.Concurrent" />
-    <Using Include="System.Net" />
-    <Using Include="System.Net.Sockets" />
-    <Using Include="System.Text" />
-  </ItemGroup>
+    <ItemGroup>
+        <Using Include="Avalanche.Core.Collections"/>
+        <Using Include="Avalanche.Core.Cryptography"/>
+        <Using Include="Avalanche.Core.Extensions"/>
+        <Using Include="Avalanche.Core.Logging"/>
+        <Using Include="Avalanche.Core.Networking.Security"/>
+        <Using Include="Avalanche.Core.Networking.Transmission"/>
+        <Using Include="Fasterflect"/>
+        <Using Include="System.Collections.Concurrent"/>
+        <Using Include="System.Net"/>
+        <Using Include="System.Net.Sockets"/>
+        <Using Include="System.Text"/>
+    </ItemGroup>
 
 </Project>

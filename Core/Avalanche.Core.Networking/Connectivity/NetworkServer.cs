@@ -1,26 +1,25 @@
 ﻿namespace Avalanche.Core.Networking.Connectivity;
 
-public class NetworkServer
+public abstract class NetworkServer(string address, int port , int bufferSize, int maxConnectionsAllowed,int backlog, bool delay, bool fragment, SeriLog logger, NetworkEvents.ClientConnection connected, NetworkEvents.ClientReceive received, NetworkEvents.ClientConnection disconnected)
 {
-    #region Fields and Propertises
+    #region Propertise
 
-    public Socket Socket;
-    private SeriLog Logger;
-    public EndPoint EndPoint;
-    public BufferManager BufferManager;
-    public Semaphore AcceptanceSemaphore;
-    public BruteForceProtection bruteForceProtection;
-    public CancellationTokenSource ShutdownToken;
-
-    public NetworkEvents.ClientConnection Connected { get; set; }
+    private Socket Socket { get; set; }
+    private SeriLog Logger { get; set; } 
+    private EndPoint EndPoint { get; set; }
+    public BufferManager BufferManager { get; set; }
+    public Semaphore AcceptanceSemaphore { get;  set; }
+    private BruteForceProtection BruteForceProtection { get; set; }
+    public CancellationTokenSource ShutdownToken { get; set; }
+    public NetworkEvents.ClientConnection Connected { get; set; } 
     public NetworkEvents.ClientReceive Received { get; set; }
-    public NetworkEvents.ClientConnection Disconnected { get; set; }
-
+    public NetworkEvents.ClientConnection Disconnected { get; set; } 
+    
     #endregion
 
     #region Initialize Method
 
-    public Task<bool> Init(string address, int port , int bufferSize, int maxConnectionsAllowed,int backlog, bool delay, bool fragment)
+    public Task<bool> Init()
     {
         try
         {
@@ -31,11 +30,15 @@ public class NetworkServer
             this.Socket.NoDelay = !delay;
             this.Socket.DontFragment = fragment;
             this.ShutdownToken = new CancellationTokenSource();
+            this.Connected = connected;
+            this.Received = received;
+            this.Disconnected = disconnected;
 
             // Initialize management mechanisms
             this.AcceptanceSemaphore = new Semaphore(maxConnectionsAllowed, maxConnectionsAllowed);
             this.BufferManager = new BufferManager(bufferSize);
-            this.bruteForceProtection = new BruteForceProtection(30, 15);
+            this.BruteForceProtection = new BruteForceProtection(30, 15);
+            this.Logger = logger;
 
             // bind the server socket
 
@@ -67,7 +70,7 @@ public class NetworkServer
 
 
                 var client = new NetworkActor(this, await Socket.AcceptAsync());
-                if (!this.bruteForceProtection.Authenticate(client.ToString()))
+                if (!this.BruteForceProtection.Authenticate(client.ToString()))
                 {
                     await client.Disconnect();
                     continue;

@@ -1,37 +1,21 @@
 ﻿namespace Avalanche.Core.Networking.Connectivity;
 
-public class NetworkActor : NetworkEvents
+public class NetworkActor(NetworkServer networkServer, Socket socket) : NetworkEvents
 {
     #region Fields and Constants
 
     private const int ReceiveTimeoutSeconds = 30;
 
-    public INetDragonCipher Cipher;
-    public readonly string IPAddress;
-    public readonly byte[] PacketFooter;
-
-
-    private Socket Socket;
     private SeriLog Logger;
     private Memory<byte> Buffer;
-    private NetworkServer Server;
+    private Socket Socket = socket;
+    public INetDragonCipher Cipher;
     private readonly object SendLock;
     private readonly int FooterLength;
-
+    public readonly string IPAddress;
+    public readonly byte[] PacketFooter;
+    private NetworkServer Server = networkServer;
     private CancellationTokenSource ShutdownToken;
-
-    #endregion
-
-    #region Network Actor Constructor
-
-    public NetworkActor(NetworkServer networkServer, Socket socket)
-    {
-        this.Socket = socket;
-        this.Server = networkServer;
-        this.Buffer = Server.BufferManager.Rent();
-        this.ShutdownToken = CancellationTokenSource.CreateLinkedTokenSource(new CancellationToken(false),Server.ShutdownToken.Token);
-
-    }
 
     #endregion
 
